@@ -1,0 +1,154 @@
+:root {
+	--border-primary: solid 3px black;
+}
+.circle {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: var(--border-primary);
+	position: relative;
+}
+
+.grua-base {
+	width: 40px;
+	height: 15px;
+	background-color: #222;
+	border: var(--border-primary);
+	border-radius: 3px;
+	position: absolute;
+	bottom: 51px;
+	right: 40px;
+}
+.grua-base::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 10px;
+	background-color: #222;
+	border: var(--border-primary);
+	position: absolute;
+	top: -12px;
+	left: 2px;
+}
+.grua-container {
+	position: absolute;
+	bottom: 75px;
+	right: 45px;
+}
+.grua-container-2 {
+	display: flex;
+	position: absolute;
+	top: 9px;
+	right: 15px;
+}
+.grua-square {
+	width: 30px;
+	height: 30px;
+	border: var(--border-primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.equis {
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+}
+.slimborder {
+	border: solid 1px black;
+}
+.borderless {
+	border: none;
+}
+.wire {
+	width: 4px;
+	height: 85px;
+	background-color: black;
+	position: absolute;
+	bottom: 58%;
+	left: 50px;
+	z-index: 10;
+}
+.wire::before {
+	content: "";
+	display: block;
+	width: 35px;
+	height: 6px;
+	background-color: black;
+	border-radius: 3px;
+	position: absolute;
+	left: -16px;
+}
+.mac {
+	width: 200px;
+	height: 150px;
+	border-radius: 15px;
+	position: absolute;
+	bottom: 91px;
+	left: 10px;
+	background-color: lightgrey;
+}
+.mac-top {
+	height: 125px;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	background-color: #222;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mac-top-screen {
+	width: 160px;
+	height: 85px;
+	background-color: white;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.square {
+	width: 28px;
+	height: 28px;
+	border: var(--border-primary);
+	border-radius: 2px;
+}
+.red {
+	background-color: rgb(241, 114, 96);
+	transform: rotate(-20deg);
+	z-index: 20;
+}
+.yellow {
+	background-color: rgb(254, 208, 103);
+}
+.blue {
+	background-color: rgb(91, 186, 226);
+}
+.mac-trapezoid {
+	height: 28px;
+	width: 80px;
+	background-color: rgb(233, 227, 227);
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+	position: absolute;
+	bottom: 63px;
+	left: 70px;
+}
+.mac-base {
+	width: 100px;
+	height: 15px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 51px;
+	left: 58px;
+	background-color: rgb(233, 227, 227);
+	border: 1px solid lightgray;
+}
+.line {
+	width: 228px;
+	height: 4px;
+	background-color: black;
+	position: absolute;
+	bottom: 50px;
+	left: 32px;
+}

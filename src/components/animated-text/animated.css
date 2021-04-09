@@ -1,0 +1,100 @@
+.text {
+	border-right: 2px solid black;
+	font-size: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-bottom: 50px;
+	font-family: "Inconsolata", monospace;
+}
+.animation {
+	-webkit-animation: typewriter 15s steps(32) 1s infinite,
+		blinkCursor 800ms steps(32) infinite;
+	animation: typewriter 15s steps(32) 1s infinite,
+		blinkCursor 800ms steps(32) infinite;
+}
+@-webkit-keyframes typewriter {
+	0%,
+	90%,
+	100% {
+		width: 0;
+	}
+	30%,
+	60% {
+		width: 290px;
+	}
+}
+@keyframes typewriter {
+	0%,
+	90%,
+	100% {
+		width: 0;
+	}
+	30%,
+	60% {
+		width: 290px;
+	}
+}
+
+@-webkit-keyframes blinkCursor {
+	from {
+		border-right-color: black;
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
+@keyframes blinkCursor {
+	from {
+		border-right-color: black;
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.text {
+		font-size: 1.5rem;
+	}
+	@-webkit-keyframes typewriter {
+		0%,
+		90%,
+		100% {
+			width: 0;
+		}
+		30%,
+		60% {
+			width: 434px;
+		}
+	}
+	@keyframes typewriter {
+		0%,
+		90%,
+		100% {
+			width: 0;
+		}
+		30%,
+		60% {
+			width: 434px;
+		}
+	}
+
+	@-webkit-keyframes blinkCursor {
+		from {
+			opacity: black;
+		}
+		to {
+			border-right-color: transparent;
+		}
+	}
+
+	@keyframes blinkCursor {
+		from {
+			opacity: black;
+		}
+		to {
+			border-right-color: transparent;
+		}
+	}
+}

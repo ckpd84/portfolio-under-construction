@@ -1,4 +1,60 @@
+:root {
+	/* Breakpoints */
+	--breakpoint-sm: 320px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1440px;
+	/* Colores */
+	--color-salmon: #faaca8;
+	--color-lila: #ddd6f3;
+	/* Fuentes */
+	--font-montserrat: "Montserrat", sans-serif;
+}
 body {
-	font-family: "Inconsolata", monospace;
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--font-montserrat);
+}
+
+#root {
+	max-width: var(--breakpoint-lg);
+	min-width: var(--breakpoint-sm);
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 2px solid white;
+	outline-offset: -5px;
+	-moz-outline-radius: 2px;
+	display: grid;
+	place-content: center;
+	place-items: center;
+	background: var(--color-salmon);
+	background-image: -webkit-linear-gradient(
+		to right,
+		var(--color-salmon),
+		var(--color-lila)
+	);
+	background-image: linear-gradient(
+		to right,
+		var(--color-salmon),
+		var(--color-lila)
+	);
+	position: relative;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.draw {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+	.container {
+		display: flex;
+		flex-direction: row;
+	}
 }
