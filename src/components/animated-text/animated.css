@@ -1,10 +1,8 @@
 .text {
 	border-right: 2px solid black;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	white-space: nowrap;
 	overflow: hidden;
-	margin-bottom: 50px;
-	font-family: "Inconsolata", monospace;
 }
 .animation {
 	-webkit-animation: typewriter 15s steps(32) 1s infinite,
@@ -20,7 +18,7 @@
 	}
 	30%,
 	60% {
-		width: 290px;
+		width: 305px;
 	}
 }
 @keyframes typewriter {
@@ -31,7 +29,7 @@
 	}
 	30%,
 	60% {
-		width: 290px;
+		width: 305px;
 	}
 }
 
@@ -53,6 +51,52 @@
 	}
 }
 
+@media screen and (min-width: 425px) {
+	.text {
+		font-size: 1.1rem;
+	}
+	@-webkit-keyframes typewriter {
+		0%,
+		90%,
+		100% {
+			width: 0;
+		}
+		30%,
+		60% {
+			width: 420px;
+		}
+	}
+	@keyframes typewriter {
+		0%,
+		90%,
+		100% {
+			width: 0;
+		}
+		30%,
+		60% {
+			width: 420px;
+		}
+	}
+
+	@-webkit-keyframes blinkCursor {
+		from {
+			opacity: black;
+		}
+		to {
+			border-right-color: transparent;
+		}
+	}
+
+	@keyframes blinkCursor {
+		from {
+			opacity: black;
+		}
+		to {
+			border-right-color: transparent;
+		}
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.text {
 		font-size: 1.5rem;
@@ -65,7 +109,7 @@
 		}
 		30%,
 		60% {
-			width: 434px;
+			width: 530px;
 		}
 	}
 	@keyframes typewriter {
@@ -76,7 +120,7 @@
 		}
 		30%,
 		60% {
-			width: 434px;
+			width: 530px;
 		}
 	}
 

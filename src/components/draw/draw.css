@@ -54,6 +54,7 @@
 	font-family: "Montserrat", sans-serif;
 	font-size: 30px;
 	font-weight: 500;
+	color: black;
 }
 .slimborder {
 	border: solid 1px black;
@@ -119,7 +120,7 @@
 	z-index: 20;
 }
 .yellow {
-	background-color: rgb(254, 208, 103);
+	background-color: #fffc00;
 }
 .blue {
 	background-color: rgb(91, 186, 226);
