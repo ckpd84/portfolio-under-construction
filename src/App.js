@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Draw from "./components/draw/Draw";
 import AnimatedText from "./components/animated-text/AnimatedText";
 import Footer from "./components/footer/Footer";
-import Navbar from "./components/header/Navbar";
 import About from "./components/about/About";
 
 library.add(fab);
